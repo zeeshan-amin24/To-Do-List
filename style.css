@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  font-family: "Poppins", sans-serif;
+}
+
+#input {
+  outline: none;
+  width: 70%;
+  padding: 6px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+#input::placeholder {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#button {
+  padding: 8px 18px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #34c759;
+  color: white;
+  cursor: pointer;
+  width: 90px;
+}
+
+.todo {
+  width: 80%;
+  height: 88%;
+
+  background-color: #f9f9f9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 5px;
+  padding-left: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.todocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 94%;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.task-container {
+  width: 100%;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+.task-container p {
+  margin-bottom: 10px!important;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.button {
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.button:hover {
+  background-color: #edeef0;
+}
+.cross-img {
+  height: 14px !important;
+  background: transparent;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #input {
+    width: 80%;
+  }
+  #button {
+    padding: 10px 10px;
+  }
+  .todo {
+    width: 95%;
+  }
+}
+
+@media (max-width: 515px) {
+  #input {
+    width: 85%;
+  }
+  #button {
+    padding: 8px 8px;
+  }
+  .todo {
+    width: 98%;
+  }
+  .task-container p {
+    font-size: 16px;
+  }
+  .button {
+    padding: 4px 0;
+  }
+  .cross-img {
+    height: 8px !important;
+  }
+  .checkbox {
+    height: 12px !important;
+  }
+}
+@media (max-width: 232px) {
+  #input::placeholder {
+    font-size: 8px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 420px) {
+  .task-container p {
+    font-size: 14px;
+  }
+  .checkbox {
+    height: 10px !important;
+  }
+  .cross-img {
+    height: 8px !important;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .task-container p {
+    font-size: 12px !important;
+  }
+  .checkbox {
+    height: 9px !important;
+  }
+}
+
+#date {
+  width: 25%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 7px;
+  border-radius: 10px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+}
+#delete {
+  background: none;
+  outline: none;
+  border: none;
+}
+#delete-img {
+  width: 20px;
+  height: 20px;
+}
+
+.heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-task {
+  font-size: xx-large;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#delete {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  margin-right: 0;
+  cursor: pointer;
+  width: 30px;
+  border-radius: 50%;
+  height: 30px;
+}
+#delete:hover{
+    background-color: #edeef0;
+}
+.logo {
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+.checked {
+  text-decoration: line-through;
+
+}
+@media (max-width:300px){
+  .task-container p{
+    font-size: 10px!important;
+  }
+  .cross-img{
+    height: 5px!important;
+  }
+  .checkbox{
+    height: 7px!important;
+  }
+}
+@media (max-width: 251px) {
+  .task-container p {
+    font-size: 7px !important;
+  }
+  .button {
+    padding: 2px 0;
+  }
+  .checkbox {
+    height:5px !important;
+ 
+  }
+  .cross-img{
+    height: 4px!important;
+  }
+}

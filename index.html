@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+ 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center;color: white;">To-Do-List <img class="logo" src="https://cdn-icons-png.flaticon.com/128/3075/3075908.png" alt=""></h1>
+    <div class="todocontainer">
+    <div class="todo">
+      <div class="input-container">
+        <input type="text" name="" id="input" placeholder="Task Name"/>
+        <input style="cursor: pointer;" id="date" type="date">
+        <button onclick="addtask()" id="button">Add</button>
+      </div>
+      <div class="heading">
+        <b class="heading-task">Tasks</b>
+        <button id="delete" onclick="deleteall()"><img id="delete-img"  src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt=""></button>
+      </div>
+      <div class="task-container"></div>
+    </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
